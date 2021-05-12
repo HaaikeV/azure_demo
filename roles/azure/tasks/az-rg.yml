@@ -1,0 +1,11 @@
+#- name: Connect Azure
+ # hosts: all
+ # gather_facts: true
+ # tasks:
+- name: Create a resource group
+  azure_rm_resourcegroup:
+    name: test
+    location: southafricanorth
+    tags:
+        testing: testing
+        delete: never
