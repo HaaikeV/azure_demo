@@ -1,7 +1,11 @@
-- name: Create a resource group
-  azure_rm_resourcegroup:
-    name: test
-    location: SouthAfricaNorth
-    tags:
-        testing: testing
-        delete: never
+- name: Connect Azure
+  hosts: localhost
+  gather_facts: true
+  tasks:
+    - name: Create a resource group
+      azure_rm_resourcegroup:
+        name: test
+        location: SouthAfricaNorth
+        tags:
+            testing: testing
+            delete: never
