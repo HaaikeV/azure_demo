@@ -1,5 +1,5 @@
 - name: Connect Azure
-  hosts: all
+  hosts: localhost
   gather_facts: true
   vars:
    ansible_connection: local
