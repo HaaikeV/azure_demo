@@ -5,7 +5,7 @@
     - name: Create a resource group
       azure_rm_resourcegroup:
         name: test
-        location: SouthAfricaNorth
+        location: southafricanorth
         tags:
             testing: testing
             delete: never
